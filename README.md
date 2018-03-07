@@ -23,3 +23,9 @@
         7. $rootScope, associated with Module (module-level) - can contain common methods and fields but it is bad practice to put to much content.
         8. Controller scopes which are direct/indirect extensions of scope.
         9. Factories - factory for common objects that can be shared by different controllers.
+
+    Exercises post session.
+        1. Enter any text into a text box and capitalize it. 
+            Eg. "todAY is a SUNNy day!!" --> "Today is a sunny day"
+        2. Enter any color into text box and that should become background color of a para.
+            Eg. "red" in text box, para will become red in color
