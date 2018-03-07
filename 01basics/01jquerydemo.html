@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>JQuery Demo</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="message"/>
+        <span id="welcome"></span>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $("#message").keyup(function(){
+            console.log("Keyup event .." + $("#message").val())
+            $("#welcome").html("<h2>Welcome: " + $("#message").val() + "</h2>" )
+        })
+    </script>
+</body>
+</html>
