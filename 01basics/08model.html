@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>Scopes Demo</title>
+</head>
+<body ng-app="myApp">
+    <input type="text" ng-model="title"/>
+
+    <div ng-controller="FirstCtrl">
+            <button ng-click="add()">Add 1</button>
+        {{title}} {{fname}} {{lname}}  
+        <div ng-controller="SecondCtrl">
+
+            <button ng-click="add()">Add 2</button>
+                {{title}} {{fname}} {{lname}}
+           </div>  
+    </div>
+   
+    
+    <script src="https://code.angularjs.org/1.3.0/angular.js"></script>
+
+    <script>
+        var app = angular.module('myApp', [])
+
+        app.run(function($rootScope){
+            $rootScope.title = "Mr."
+            console.log($rootScope)
+            $rootScope.add = function(){
+                console.log('Handler for add function');
+            }
+        })
+
+        app.controller("FirstCtrl", function($scope){
+            $scope.fname = "Puneet"
+            console.log($scope)
+            
+        })
+        app.controller("SecondCtrl", function($scope){
+            $scope.lname = "Vashisht"
+            console.log($scope)
+            
+        })
+        
+    </script>
+</body>
+</html>

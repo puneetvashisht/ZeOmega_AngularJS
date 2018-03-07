@@ -17,3 +17,9 @@
         1. AngularJS Module : angular.module
         2. MVC pattern in AngularJS - Separation of concerns  angular.controller($scope)
         3. MVW - Module View Whatever
+        4. Model ($scope)
+        5. With each controller, you get a unique $scope object
+        6. Each controller scope is extention of $rootScope (super-parent)
+        7. $rootScope, associated with Module (module-level) - can contain common methods and fields but it is bad practice to put to much content.
+        8. Controller scopes which are direct/indirect extensions of scope.
+        9. Factories - factory for common objects that can be shared by different controllers.

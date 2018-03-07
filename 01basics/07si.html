@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>SI App</title>
+</head>
+<body ng-app="siApp">
+    <div ng-controller="siCtrl">
+        <input type="number" ng-model="p" placeholder="Enter Principal"/>
+        <input type="number" ng-model="r" placeholder="Enter Rate"/>
+        <input type="number" ng-model="t" placeholder="Enter Time"/>
+        <button ng-click="calcSI()">Calculate SI</button>
+        <!-- <h3 ng-if="t">SI : {{(p * t * r)/100}}</h3> -->
+        <h3 >SI : {{si}}</h3>
+       
+    </div>
+    <script src="https://code.angularjs.org/1.3.0/angular.js"></script>
+
+    <script>
+        var app = angular.module('siApp', [])
+
+        app.controller('siCtrl', function($scope){
+
+            console.log($scope)
+            $scope.calcSI = function(){
+                $scope.si = $scope.p * $scope.t * $scope.r / 100;
+            }
+        })
+        
+    </script>
+</body>
+</html>
