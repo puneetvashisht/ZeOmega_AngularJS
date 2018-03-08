@@ -34,8 +34,10 @@
         1. Data manipulation is controller's responsibility but when you want to present in a view it becomes responsibility of Filters
             - Formatters and Filters
         Existing filters
-            uppercase, lowercase, date,
+            uppercase, lowercase, date, limitTo, orderBy, filter
         Custom filters
+            capitalize
+            Create a custom filter to reverse a string.
         Generate raw json data : https://www.mockaroo.com/
 
     Directives
