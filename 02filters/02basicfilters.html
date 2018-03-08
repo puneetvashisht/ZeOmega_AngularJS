@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>Filter Demo</title>
+</head>
+<body ng-app="myApp">
+    <div ng-controller="AppCtrl">
+        <h3>{{scores | limitTo: -2}}</h3>
+        <h3>{{fname | limitTo: 2}}</h3>
+        <h3>{{scores | orderBy}}</h3>
+
+        <br/>
+
+        <!-- {{employees | orderBy: '-id'}} -->
+
+        <br/>
+
+        {{employees | filter: {role:"Software Engineer"} }}
+        
+    </div>
+    <script src="https://code.angularjs.org/1.3.0/angular.js"></script>
+    <script>
+        var app = angular.module('myApp', [])
+
+        app.controller('AppCtrl', function($scope){
+            $scope.scores = [23,54,56,78,21,56,65];
+            $scope.fname = "Ravi"
+
+            $scope.employees = [
+                {name: "Ravi", id: 2343, salary:34343.34, role: 'HR'},
+                {name: "Priya", id: 3443, salary:54343.34, role: 'Software Developer'},
+                {name: "Sonia", id: 5665, salary:45455.34, role: 'Software Engineer'},
+                {name: "Jaanvi", id: 3435, salary:55444.34, role: 'Software Engineer'}
+            ]
+            
+        })
+
+    </script>
+</body>
+</html>

@@ -29,3 +29,13 @@
             Eg. "todAY is a SUNNy day!!" --> "Today is a sunny day"
         2. Enter any color into text box and that should become background color of a para.
             Eg. "red" in text box, para will become red in color
+
+    Using Filters 
+        1. Data manipulation is controller's responsibility but when you want to present in a view it becomes responsibility of Filters
+            - Formatters and Filters
+        Existing filters
+            uppercase, lowercase, date,
+        Custom filters
+
+    Directives
+        Custom Tags <notepad/>

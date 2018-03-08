@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Filter Demo</title>
+</head>
+<body ng-app="myApp">
+    <div ng-controller="AppCtrl">
+        <h3>{{message | uppercase}}</h3>
+        <h3>{{amount | currency: '$' : '3'}}</h3>
+        <h3>{{amount | number : '3'}}</h3>
+        <h3>Date is : {{today | date:'dd/MM/yyyy hh:mm:ss:sss a'}}</h3>
+    </div>
+    <script src="https://code.angularjs.org/1.3.0/angular.js"></script>
+    <script>
+        var app = angular.module('myApp', [])
+
+        app.controller('AppCtrl', function($scope){
+            $scope.message = "Welcome to Day 2!!"
+            $scope.today = new Date();
+            $scope.amount = 34355;
+        })
+
+    </script>
+</body>
+</html>
