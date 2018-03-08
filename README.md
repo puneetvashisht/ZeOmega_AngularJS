@@ -36,6 +36,7 @@
         Existing filters
             uppercase, lowercase, date,
         Custom filters
+        Generate raw json data : https://www.mockaroo.com/
 
     Directives
         Custom Tags <notepad/>
