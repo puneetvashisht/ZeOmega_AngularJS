@@ -40,11 +40,19 @@
             Create a custom filter to reverse a string.
         Generate raw json data : https://www.mockaroo.com/
 
-    Directives
+    Directives: Custom tag as a component (self-sufficient)
         Built in Directives 
             Already avaible in the library
             ng-app, ng-controller, ng-repeat, ng-if
         Custom Tags <notepad/>
             1. template: HTML content of the tag
             2. restrict: to restrict it to element(E) or attribute(A) or class(C) or combination (ACE) of all three.
+            3. link (scope, element, attrs)
+                scope -> The scope in which your directive is placed
+                element -> JQLite (subset of Jquery) wrapped element, in which you call 90% of jquery methods (addClass, removeClass, bind ....)
+                attrs -> Get the attribute values
         Dynamic custom tag
+    
+    Exercise:
+     
+        1. Create card directives and provide a search feature on the title using filters.

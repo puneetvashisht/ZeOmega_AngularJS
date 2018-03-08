@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Notification Tag</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body ng-app="myApp">
+        
+    <div ng-controller="AppCtrl">    
+            <zo-badge caption="BJP" count="0"></zo-badge>
+            <zo-badge caption="Congress" count="0"></zo-badge>
+            <!-- <zo-badge caption="Spam" count="55"></zo-badge> -->
+    </div>
+    <script src="https://code.angularjs.org/1.3.0/angular.js"></script>
+    <script>
+        
+        var app = angular.module('myApp', [])
+
+        app.controller('AppCtrl', function($scope){
+
+        })
+
+        app.directive('zoBadge', function(){
+            return {
+                restrict: 'E',
+                scope: { },
+                templateUrl: 'partial/badge.html',
+                link: function(scope, element, attrs){
+                    console.log(scope)
+                    console.log(attrs.caption)
+                    scope.caption = attrs.caption
+                    scope.count = attrs.count
+
+                    element.bind('click', function(){
+                        scope.count = parseInt(scope.count) +1;
+                        scope.$apply();
+                    })
+                }
+            }
+        })
+    </script>
+</body>
+</html>
