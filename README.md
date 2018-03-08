@@ -45,3 +45,6 @@
             Already avaible in the library
             ng-app, ng-controller, ng-repeat, ng-if
         Custom Tags <notepad/>
+            1. template: HTML content of the tag
+            2. restrict: to restrict it to element(E) or attribute(A) or class(C) or combination (ACE) of all three.
+        Dynamic custom tag

@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <div ng-app="myApp">
+        <!-- Attribute when you want to enhance an already existing functionality, datepicker -->
+        <!-- <div zo-link></div> -->
+        <!-- Element when you to create a completely new functionality from grounds up -->
+        <!-- <zo-link></zo-link> -->
+        <!-- <p zo-link></p>
+        <span zo-link></span>
+        <div zo-link></div> -->
+
+        <div class="zo-link"></div>
+        <p class="zo-link"></p>
+
+    </div>
+    <script src="https://code.angularjs.org/1.3.0/angular.js"></script>
+    <script>
+        var app = angular.module('myApp', [])
+
+        
+        app.directive('zoLink', function(){
+            return {
+                restrict: 'C',
+                replace : true,
+                template : '<div><a href="http://www.zeomega.com">ZeOmega Website</a> <p>About Ze Omega sdkj sd gksd kd</p></div>'
+            }
+        })
+
+    </script>
+</body>
+</html>
