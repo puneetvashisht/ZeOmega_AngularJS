@@ -10,7 +10,7 @@
         <br>
         {{message | capitalize:'2'}}
         <br>
-        {{message | reverse }}
+        {{message |  reverse  }}
         
     <script src="https://code.angularjs.org/1.3.0/angular.js"></script>
     <script>
@@ -30,7 +30,16 @@
                 console.log(args)
                 var output = ""
                 if(input){
-                    output = input[args].toUpperCase() + input.slice(1).toLowerCase()
+                    output = input[0].toUpperCase() + input.slice(1).toLowerCase()
+                }
+                return output
+            }
+        })
+        app.filter('reverse', function(){
+            return function(input){
+                var output = ""
+                if(input){
+                    output = input.split('').reverse().join('')
                 }
                 return output
             }

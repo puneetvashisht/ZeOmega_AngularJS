@@ -41,4 +41,7 @@
         Generate raw json data : https://www.mockaroo.com/
 
     Directives
+        Built in Directives 
+            Already avaible in the library
+            ng-app, ng-controller, ng-repeat, ng-if
         Custom Tags <notepad/>
