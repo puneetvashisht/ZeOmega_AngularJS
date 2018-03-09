@@ -67,6 +67,10 @@
         - Hard coded .json url
         - Server side code to consume and produce json info 
         - Server side (Java, .NET, PHP, NodeJS)
+        - $http service
+        - $http is configurable (set headers, status code, status text)
+        - $resource
+
 
         NodeJS
             - Create a configuration file using npm init -> package.json
@@ -76,3 +80,43 @@
             1. Configuration file - npm init - package.json
             2. npm install <dependency> - express, body-parser
             3. .js and write express code
+
+
+    Callbacks vs Promises
+
+    1. CAllback 
+    function doSomething(callback){
+        setTimeout(() => {
+            console.log('Do Something')
+            callback("success")
+        }, 5000)
+            
+        }
+    doSomething(function(result) {console.log(result)})
+
+    2. Promises are substitue to callbacks in JS. Promises are better boz u don't expose your functionality.
+
+    function doSomething(){
+    return new Promise((resolve, reject) => {
+    setTimeout(() => {
+        console.log('Do Something')
+        resolve("success")
+    }, 5000)
+    })	
+    }
+
+    doSomething().then( function(data){
+	    console.log(data)
+        })
+
+
+
+    New JS features
+    http://es6-features.org/   
+        promises 
+
+    Single Page Application
+        Airline booking application
+        Search, Selection, Flyer details, Payment
+
+

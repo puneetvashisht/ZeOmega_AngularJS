@@ -30,6 +30,10 @@
     <script>
 
         angular.module('myApp', [])
+
+        .run(function($http) {
+            $http.defaults.headers.common.Authorization = 'Basic YmVlcDpib29w';
+        })
         .controller('AppCtrl', function($scope, $http){
 
            $scope.submitData = function(){
@@ -37,10 +41,13 @@
                $http({
                    url: 'http://localhost:3000/authenticate',
                    method: 'POST',
+                   headers: {
+                        'Content-Type': 'application/pdf'
+                },
                    data: $scope.user
-               }).success(function(res){
+               }).then(function(res){
                    console.log(res);
-                   if(res.auth){
+                   if(res.data.auth){
                        $scope.message = "You have successfully logged in"
                    }
                    else{
