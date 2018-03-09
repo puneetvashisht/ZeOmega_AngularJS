@@ -51,6 +51,8 @@
                 scope -> The scope in which your directive is placed
                 element -> JQLite (subset of Jquery) wrapped element, in which you call 90% of jquery methods (addClass, removeClass, bind ....)
                 attrs -> Get the attribute values
+            4. Transclude ; transclude: true, ng-transclude
+            5. Isolation in scope { @}
         Dynamic custom tag
     
     Exercise:
