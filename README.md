@@ -59,3 +59,8 @@
      
         1. Create card directives and provide a search feature on the title using filters.
         https://getbootstrap.com/docs/4.0/components/card/
+
+
+    Server side communication
+
+        REST Api's
