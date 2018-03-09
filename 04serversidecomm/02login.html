@@ -11,6 +11,7 @@
             <form class="form-signin">
                     <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
                     <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+                    <h2 class="h3 mb-3 font-weight-normal">{{message}}</h2>
                     <label for="inputEmail" class="sr-only">Email address</label>
                     <input type="email" ng-model="user.email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
                     <label for="inputPassword" class="sr-only">Password</label>
@@ -34,11 +35,17 @@
            $scope.submitData = function(){
                console.log($scope.user);
                $http({
-                   url: 'dummyUrl',
+                   url: 'http://localhost:3000/authenticate',
                    method: 'POST',
                    data: $scope.user
                }).success(function(res){
                    console.log(res);
+                   if(res.auth){
+                       $scope.message = "You have successfully logged in"
+                   }
+                   else{
+                       $scope.message = "Invalid Username/Password"
+                   }
                })
            }
 

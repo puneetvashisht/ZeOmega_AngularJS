@@ -64,3 +64,15 @@
     Server side communication
 
         REST Api's
+        - Hard coded .json url
+        - Server side code to consume and produce json info 
+        - Server side (Java, .NET, PHP, NodeJS)
+
+        NodeJS
+            - Create a configuration file using npm init -> package.json
+            - npm install express
+
+            Steps
+            1. Configuration file - npm init - package.json
+            2. npm install <dependency> - express, body-parser
+            3. .js and write express code
