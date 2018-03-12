@@ -34,6 +34,7 @@ myApp.config(function($stateProvider) {
       name: 'person', 
       // This state takes a URL parameter called personId
       url: '/people/{personId}', 
+      // url: 'people/:personId'
       component: 'person',
       // This state defines a 'person' resolve
       // It delegates to the PeopleService, passing the personId parameter

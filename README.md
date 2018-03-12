@@ -118,5 +118,28 @@
     Single Page Application
         Airline booking application
         Search, Selection, Flyer details, Payment
+        Angular router is a separate module
+            angular.module('yourApp', ['ngRoute', 'anotherApp'])
+        Facilities of routing libraries
+            - Navigation : Programmatic and Link based navigation to routes
+            - Routes with Parameters
+            - Nested Routes
+            - Routes Guarded
+    Providers
+        Difference b/w Factories, Services and Providers
+            - Providers can be configured once, data can be changed once --> module.config
+            - Providers unlike (factories and services) can be configured or their values can be changed once and only with the config funtion
+        Dependency Injection
+
+    UI Router (third party routing API)
+
+    Forms validations  
+        ng-valid
+        ng-invalid
+        ng-dirty
+        ng-pristine
+
+        Never do DOM manipulation
+
 
 
