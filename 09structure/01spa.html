@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>Single Page Application Demo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous" />
+</head>
+
+<body ng-app="myApp">
+
+    <a href="#/">Home</a> |
+    <a href="#/aboutus">About</a>|
+    <a href="#/login">Login</a> |
+    <a href="#/news/mumbai">News Mumbai</a>
+    <a href="#/news/chennai">News Chennai</a>
+    <a href="#/news/newyork">News New York</a>
+    <ng-view></ng-view>
+
+    <script src="https://code.angularjs.org/1.3.0/angular.js"></script>
+    <script src="https://code.angularjs.org/1.3.0/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers/LoginCtrl.js"></script>
+    <script src="controllers/HomeCtrl.js"></script>
+    <script src="controllers/ProfileCtrl.js"></script>
+    <script src="controllers/NewsCtrl.js"></script>
+    <script src="services/UserData.js"></script>
+    
+</body>
+
+</html>
