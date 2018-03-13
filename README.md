@@ -141,5 +141,38 @@
 
         Never do DOM manipulation
 
+    Angular Batarang for debugging
+    https://chrome.google.com/webstore/detail/angularjs-batarang/ighdmehidhipcmcojjgiloacoafjmpfk?hl=en
 
+
+    Theory overview of AngularJS
+    NodeJS 
+    NPM - Node Package Manager
+    (express, body-parser, cors)
+    1. To Create server side code 
+    2. To use client tools that run on JS (http-server)
+
+
+    Bower
+        - front end dependencies
+        - bower install <package> angular, jquery
+        - bower doesn't get you indirect dependencies
+        - npm is more often choice for back-end dependencies (express, cors, body-parser)
+
+    Gulp
+        - streaming build system
+        - Build: copy static resources to dist, minify the js file, concat....
+        - Task that can do own stuff
+
+    Yeoman
+        - scaffolding or creating initial structures
+
+    Yeoman, Bower
+    Initial Structures, Dependency Management
+    Testing
+    Protractor - End to end testing
+    Jasmine, Karma, Mocks
+    RequireJS
+
+    Multiple components update on state changes
 
