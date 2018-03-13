@@ -1,3 +1,4 @@
+//CommonJS implementation   - no module loading features in JS
 const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()

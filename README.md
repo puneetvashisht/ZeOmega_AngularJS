@@ -159,20 +159,59 @@
         - bower doesn't get you indirect dependencies
         - npm is more often choice for back-end dependencies (express, cors, body-parser)
 
-    Gulp
+    Grunt
+    Gulp (faster, asynchrnous build)
         - streaming build system
         - Build: copy static resources to dist, minify the js file, concat....
         - Task that can do own stuff
 
     Yeoman
         - scaffolding or creating initial structures
+        Steps
+            1. npm install -g yo
+            2. install generator : npm install -g angular-generator
+            3. yo angular
+
+
+    scripts.659a24ee
+    vendor - JS Libraries (Angular, Angular-Route, JQuery)
+
+
+    Versioning - Major.Minor.Patch
+    Npm version <minor | major | patch> . Also creates a tag/release in git
+    Scripts versioning - done by grunt build tools
+
 
     Yeoman, Bower
     Initial Structures, Dependency Management
+
+
+
     Testing
+    Unit Testing
+        Library to write test cases : Jasmine
+        Sitmulate test environment : Karma
+
+    Steps:
+        1. Install jasmine and karma packages
+        2. Test Case in Jasmine in the tests folder
+        3. Karma configuration file --> karma init
+        
+    Jasmine, Karma
+    AngularJS testing
+        - Controller methods
+        - Service methods
+        - Directive
+    Unit testing - testing very units. For developer, by developer, of developer 
     Protractor - End to end testing
-    Jasmine, Karma, Mocks
+    
+    Mocks
+    
     RequireJS
 
+    PPT
+
     Multiple components update on state changes
+
+
 
